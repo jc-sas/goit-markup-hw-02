@@ -52,7 +52,7 @@ body {
 }
 
 /* ========Logo========*/
-.logo.link {
+.logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -67,10 +67,10 @@ body {
 .logo-light {
   color: var(--logoColorLight);
 }
-.logo .logo-light:hover,
-.logo .logo-light:focus,
-.logo-darck:hover,
-.logo-darck:focus {
+.logo:hover > .logo-light,
+.logo:focus > .logo-light,
+.logo:hover > .logo-darck,
+.logo:focus > .logo-darck {
   color: var(--accentColor);
 }
 /* ========Navigation======== */
@@ -185,7 +185,7 @@ body {
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--lightColor);
-  background: var(--accentColor);
+  background-color: var(--accentColor);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
